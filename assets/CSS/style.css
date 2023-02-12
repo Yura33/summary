@@ -51,7 +51,6 @@ img {
 
 .header__avatar {
 	position: relative;
-	height: 100%;
 	border: 5px solid #205e99;
 	border-radius: 50%;
 	z-index: 1;
