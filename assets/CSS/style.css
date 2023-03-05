@@ -107,8 +107,8 @@ img {
 .title {
 	margin-bottom: 23px;
 	padding: 10px 25px;
-	padding-left: 60px;
-	border-bottom: 1px solid #205e99;
+	padding-left: 65px;
+	border-bottom: 3px solid #205e99;
 	font-size: 26px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -336,6 +336,60 @@ img {
 	color: #3a88d1;
 }
 
+.projects__title {
+	background-image: url('../img/titles/projects.svg');
+}
+
+.projects__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.projects__item {
+	margin-bottom: 20px;
+	padding: 15px;
+	width: 48%;
+	border: 1px solid #205e99;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+.projects__item:hover {
+	transform: scale(1.03);
+}
+
+.projects__item:active {
+	transform: scale(1.01);
+}
+
+.projects__stack-list {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 5px;
+}
+
+.projects__stack-item {
+	margin-left: 4px;
+}
+
+.projects__stack-icon {
+	width: 26px;
+}
+
+.projects__img {
+	width: 92%;
+}
+
+.projects__img-title {
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #205e99;
+	letter-spacing: 1px;
+}
+
 .footer {
 	position: absolute;
 	bottom: 15px;
@@ -360,13 +414,25 @@ img {
 	}
 }
 
+@media (max-width: 1024px) {
+	.projects__list {
+		justify-content: center;
+	}
+
+	.projects__item {
+		width: 77%;
+	}
+}
+
 @media (max-width: 920px) {
 	.header__box-avatar {
 		width: 360px;
 	}
+
 	.left-column {
 		flex-basis: 360px;
 	}
+
 	.contacts__list,
 	.interests__list,
 	.education__inner,
@@ -380,20 +446,38 @@ img {
 		flex-direction: column-reverse;
 		background-color: #749abf;
 	}
+
 	.header__box-avatar {
 		padding-bottom: 0;
 	}
+
 	.header__profile {
 		position: relative;
 		padding-left: 40px;
 		text-align: center;
 	}
+
 	.left-column,
 	.right-column {
 		flex: 1 1 auto;
 	}
+
 	.left-column {
 		padding-bottom: 0;
+	}
+
+	.projects__list {
+		justify-content: space-between;
+	}
+
+	.projects__item {
+		width: 48%;
+	}
+}
+
+@media (max-width: 576px) {
+	.projects__item {
+		width: 100%;
 	}
 }
 
@@ -401,8 +485,13 @@ img {
 	.header__box-avatar {
 		width: 100%;
 	}
+
 	.contacts__item {
 		flex-direction: column;
 		text-align: center;
+	}
+
+	.projects__stack-icon {
+    width: 22px;
 	}
 }
