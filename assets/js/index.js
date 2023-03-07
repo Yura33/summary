@@ -20,6 +20,11 @@ const data = [
     title: 'momentum',
     href: 'https://rolling-scopes-school.github.io/yura33-JSFEPRESCHOOL2022Q4/momentum/',
     src: './assets/img/projects/momentum.png'
+  },
+  {
+    title: 'lagoona',
+    href: 'https://yura33.github.io/lagoona/',
+    src: './assets/img/projects/lagoona.png'
   }
 ];
 
